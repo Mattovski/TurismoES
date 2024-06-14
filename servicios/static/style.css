@@ -1,0 +1,108 @@
+/* ### VARIABLES DE COLORES ### */
+:root {
+    /*---- COLORES PÁGINA ----*/
+    --colorBg-pagina: #DDE1E8;
+  
+    /*---- COLORES NAVBAR ----*/
+    --colorBg-navbarPrincipal: white; 
+    --colorTexto-navbarPrincipal: var(--grisOscuro); 
+
+    /*---- COLORES MODALES INICIAR SESION Y REGISTRO USUARIO ----*/
+    --colorBg-headerModalesInicioYRegistro: #005F00; 
+    --colorBg-bodyModalesInicioYRegistro: #DDE1E8;
+    --colorTexto-modalesInicioYRegistro: white; 
+}
+
+
+
+/*--- EDITAR COLOR DE FONDO DE LA PÁGINA ---*/
+body {
+    background-color: var(--colorBg-pagina);
+}
+
+
+/*--- CONFIGURAR NAVBAR ---*/
+#navbarPrincipal {
+    background-color: var(--colorBg-navbarPrincipal);
+}
+
+#logoPagina {
+    margin-left: 50px;
+}
+#logoPagina img {
+    width: 100px;
+}
+
+#menuUsuario {
+    margin-right: 50px;
+}
+#menuUsuario img {
+    width: 120px;
+}
+
+#dropdownMenuUsuario .dropdown-toggle::after { /* Eliminar la flecha (caret) */
+    display: none; /* Oculta la flecha */
+}
+.custom-dropdown {
+    margin-left: -45px; /* Ajusta el valor para mover el dropdown hacia la izquierda */
+}
+
+
+/*--- CONFIGURAR MODAL REGISTRO E INICIO DE SESIÓN ---*/
+#modalRegistro .modal-header, #modalIniciarSesion .modal-header {
+    background-color: var(--colorBg-headerModalesInicioYRegistro);
+    color: var(--colorTexto-modalesInicioYRegistro);
+}
+#modalRegistro .modal-body, #modalIniciarSesion .modal-body {
+    background-color: var(--colorBg-bodyModalesInicioYRegistro);
+}
+
+::placeholder, 
+#lblPreguntaIniciarSesion, #lblPreguntaRegistroUsuario { /* Estilo para el placeholder de todos los inputs */
+    font-style: italic; /* Hacer el texto en cursiva */
+}
+
+#botonRegistro, #botonIniciarSesion {
+    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
+    width: 465px;
+}
+#iconoUsuario {
+    width: 120px;
+    height: 120px;
+}
+#chkMayorEdad, #chkTerminosYCondiciones {
+    margin-left: 50px;
+}
+
+#botonRegistro, #botonIniciarSesion,
+#registroEmail, #registroContraseña, 
+#registroConfirmarContraseña, #registroNombreUsuario {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#modalRegistro .modal-body, #modalIniciarSesion .modal-body {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#modalRegistro .modal-header, #modalIniciarSesion .modal-header {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+#navbarPrincipal {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#modalRegistro .modal-content, #modalIniciarSesion .modal-content {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
